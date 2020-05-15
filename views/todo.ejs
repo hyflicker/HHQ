@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VDI Queue</title>
+        <link rel= "shortcut icon" href="favicon.ico">
+            <link href="/assets/styles.css" type="text/css" rel="stylesheet" />
+            <base href="/">
+            <script src="/assets/todo-list.js"></script>
+            <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        </head>
+    <body>
+        <h2>Happy Hour Game Queue</h2>
+        <h1>My Todo List</h1>
+        <div id="todo-table">
+            <form>
+                <input type="text" name="item" placeholder="Add Name Here..." required />
+                <button type="submit">Add To Queue</button>
+            </form>    
+            <ul>
+                <% for(var i=0; i < todos.length; i++){ %>
+                    <li><%= todos[i].item %></li>
+               <% } %>
+            </ul>
+        </div>
+        <script type="text/javascript" src="assets/todo-list.js"></script>
+    </body>
+</html>
